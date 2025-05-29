@@ -13,8 +13,11 @@ position = Vector2(319, 246)
 script = ExtResource("1_4pmxj")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-516, -301)
 texture = ExtResource("1_lgrwq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(0.5, 0)
+position = Vector2(-514, -298)
 shape = SubResource("RectangleShape2D_4pmxj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
