@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const MOVESPEED = 500
+const MOVESPEED = 1500
 
 func _physics_process(delta: float) -> void:
 	var horizontal = Input.get_axis("ui_left","ui_right")

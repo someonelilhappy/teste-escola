@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="teste-escola"
+run/main_scene="uid://c6vfdwn8rscg2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
