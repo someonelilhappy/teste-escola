@@ -10,4 +10,4 @@ func _on_continue_button_pressed() -> void:
 
 
 func _on_exit_button_pressed() -> void:
-	print("Botão 'desistir' precionado")
+	get_tree().quit()

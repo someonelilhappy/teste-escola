@@ -1,9 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://u2xpku6bg0v5"]
+[gd_scene load_steps=10 format=3 uid="uid://u2xpku6bg0v5"]
 
 [ext_resource type="Script" uid="uid://b7w7067obiow8" path="res://scripts/menu-script.gd" id="1_4ytvr"]
 [ext_resource type="FontFile" uid="uid://o4ha7mg2e3up" path="res://fonts/depixel/DePixelHalbfett.ttf" id="1_mhnvy"]
 [ext_resource type="Texture2D" uid="uid://cqn8htfnd2u37" path="res://sprites/1f22ac71709c3d4c39d89dc2eb2b6a18.jpg" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://7k4flsidf8g1" path="res://sprites/804fce287b0c05d61d8adbab48ccedf6.jpg" id="2_con2f"]
+[ext_resource type="StyleBox" uid="uid://bsq3136wuaqtc" path="res://styles/menu_normal_style.tres" id="4_4ytvr"]
+[ext_resource type="StyleBox" uid="uid://tgt6vyw8okdv" path="res://styles/menu_hover_style.tres" id="4_g3eks"]
+[ext_resource type="StyleBox" uid="uid://y77l5mdv8y0b" path="res://styles/menu_focus_style.tres" id="4_v86rl"]
+[ext_resource type="StyleBox" uid="uid://bfkx0gepmudwe" path="res://styles/menu_disabled_style.tres" id="5_13sgg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mhnvy"]
 font = ExtResource("1_mhnvy")
@@ -70,18 +74,37 @@ grow_vertical = 2
 
 [node name="PlayButton" type="Button" parent="VBoxContainer/VSplitContainer/HBoxContainer/Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.827451, 0.439216, 0.827451, 1)
+theme_override_constants/align_to_largest_stylebox = 110
 theme_override_fonts/font = ExtResource("1_mhnvy")
+theme_override_styles/focus = ExtResource("4_v86rl")
+theme_override_styles/disabled = ExtResource("5_13sgg")
+theme_override_styles/hover = ExtResource("4_g3eks")
+theme_override_styles/normal = ExtResource("4_4ytvr")
 text = "JULGAR"
 
 [node name="ContinueButton" type="Button" parent="VBoxContainer/VSplitContainer/HBoxContainer/Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.827451, 0.439216, 0.827451, 1)
+theme_override_constants/align_to_largest_stylebox = 80
 theme_override_fonts/font = ExtResource("1_mhnvy")
+theme_override_styles/focus = ExtResource("4_v86rl")
+theme_override_styles/disabled = ExtResource("5_13sgg")
+theme_override_styles/hover = ExtResource("4_g3eks")
+theme_override_styles/normal = ExtResource("4_4ytvr")
+disabled = true
 text = "VOLTAR PRO
 INFERNO"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer/VSplitContainer/HBoxContainer/Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.827451, 0.439216, 0.827451, 1)
+theme_override_constants/align_to_largest_stylebox = 80
 theme_override_fonts/font = ExtResource("1_mhnvy")
+theme_override_styles/focus = ExtResource("4_v86rl")
+theme_override_styles/disabled = ExtResource("5_13sgg")
+theme_override_styles/hover = ExtResource("4_g3eks")
+theme_override_styles/normal = ExtResource("4_4ytvr")
 text = "DESISTIR"
 
 [node name="Img2" type="TextureRect" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
