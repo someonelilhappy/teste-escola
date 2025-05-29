@@ -10,11 +10,12 @@ config_version=5
 
 [application]
 
-config/name="teste-escola"
+config/name="Cinco Noitadas no ETE"
 run/main_scene="uid://c6vfdwn8rscg2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-config/icon="res://icon.svg"
+boot_splash/image="uid://dx1t51lfxd63h"
+config/icon="uid://dx1t51lfxd63h"
 
 [display]
 
