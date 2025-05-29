@@ -13,4 +13,12 @@ config_version=5
 config/name="teste-escola"
 run/main_scene="uid://c6vfdwn8rscg2"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=3
+window/stretch/mode="viewport"
