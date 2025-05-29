@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://u2xpku6bg0v5"]
+[gd_scene load_steps=6 format=3 uid="uid://u2xpku6bg0v5"]
 
+[ext_resource type="Script" uid="uid://b7w7067obiow8" path="res://scripts/menu-script.gd" id="1_4ytvr"]
 [ext_resource type="FontFile" uid="uid://o4ha7mg2e3up" path="res://fonts/depixel/DePixelHalbfett.ttf" id="1_mhnvy"]
 [ext_resource type="Texture2D" uid="uid://cqn8htfnd2u37" path="res://sprites/1f22ac71709c3d4c39d89dc2eb2b6a18.jpg" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://7k4flsidf8g1" path="res://sprites/804fce287b0c05d61d8adbab48ccedf6.jpg" id="2_con2f"]
@@ -15,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4ytvr")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -87,3 +89,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("2_con2f")
 expand_mode = 1
+
+[connection signal="pressed" from="VBoxContainer/VSplitContainer/HBoxContainer/Panel/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/VSplitContainer/HBoxContainer/Panel/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/VSplitContainer/HBoxContainer/Panel/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
